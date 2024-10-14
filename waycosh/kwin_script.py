@@ -56,12 +56,12 @@ function windowInfo(w) {
 }
 
 function windowAdded(w) {
-    if (w.normalWindow)
+    if (w.normalWindow && w.moveable && !w.skipSwitcher)
         event("windowAdded", windowInfo(w));    
 }
 
 function windowRemoved(w) {
-    if (w.normalWindow)
+    if (w.normalWindow && w.moveable && !w.skipSwitcher)
         event("windowRemoved", windowInfo(w));    
 }
 

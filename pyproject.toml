@@ -1,0 +1,16 @@
+[project]
+name = "waycosh"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbus-next>=0.2.3",
+]
+
+[project.scripts]
+waycosh = "waycosh.main:__main__"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
